@@ -2,18 +2,18 @@
 
 #include <stdio.h>
 int main(){
-    float preco_litro = 5.80;
-    int distancia, consumo;
+    float preco_litro = 6.30;
+    float distancia, consumo;
     
     printf("Distância (Km):");
-    scanf("%d", &distancia);
+    scanf("%f", &distancia);
     
     printf("Consumo(Litros):");
-    scanf("%d", &consumo);
+    scanf("%f", &consumo);
 
     float custo_total = (distancia / consumo) * preco_litro;
 
-    printf("Custo total: %.2f", custo_total);
+    printf("Custo total: %.2f\n", custo_total);
 
     float custo_por_km = preco_litro / consumo;
 
